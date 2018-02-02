@@ -39,7 +39,7 @@ How to get going in...
 ### Python
 1. [Download and install](https://www.python.org/)
     * Make sure to check the *Add to Path* box
-2. pip install virtualenv
+2. `pip install virtualenv`
 
 ### Mouse
 ![Logitech Mouse Settings](/images/Logitech.png)
