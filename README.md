@@ -10,11 +10,9 @@ How to get going in...
 ### Shell
 1. Download and install [Git](https://git-scm.com/download/win) for Windows
 2. Run **Git Bash**, open *Options...* and apply the following settings:
-    * ![Looks](/images/Looks.png) | ![Text](/images/Text.png)
-    * ![Keys](/images/Keys.png)
-    * ![Mouse](/images/Mouse.png)
-    * ![Window](/images/Window.png)
-    * ![Terminal](/images/Terminal.png)
+    * ![Looks](/images/Looks.png) ![Text](/images/Text.png)
+    * ![Keys](/images/Keys.png) ![Mouse](/images/Mouse.png)
+    * ![Window](/images/Window.png) ![Terminal](/images/Terminal.png)
 3. Bash profile
     * `touch ~/.bash_profile`
     * `cp ./.bashrc ~/`
