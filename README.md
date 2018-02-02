@@ -28,7 +28,7 @@ How to get going in...
     * [`ctrl+,`, **Install**, Search for: *sync-settings*, Install]
 3. Configure sync-settings
     * [Generate new token](https://github.com/settings/tokens) for GitHub API access
-    * Gist Id: 609090412d183f365d72cde0c5e8b6ed
+    * Gist Id: `609090412d183f365d72cde0c5e8b6ed`
     * Disable *Check For Updated Backup*
 4. Sync settings: [`ctrl+shift+p`, **Sync Settings: Restore**]
 
