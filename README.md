@@ -10,12 +10,12 @@ How to get going in...
 ### Shell
 1. Download and install [Git](https://git-scm.com/download/win) for Windows
 2. Run **Git Bash**, open *Options...* and apply the following settings:
-    * [!Looks](/images/Looks.png)
-    * [!Text](/images/Text.png)
-    * [!Keys](/images/Keys.png)
-    * [!Mouse](/images/Mouse.png)
-    * [!Window](/images/Window.png)
-    * [!Terminal](/images/Terminal.png)
+    * ![Looks](/images/Looks.png)
+    * ![Text](/images/Text.png)
+    * ![Keys](/images/Keys.png)
+    * ![Mouse](/images/Mouse.png)
+    * ![Window](/images/Window.png)
+    * ![Terminal](/images/Terminal.png)
 3. Bash profile
     * `touch ~/.bash_profile`
     * `cp ./.bashrc ~/`
@@ -45,7 +45,7 @@ How to get going in...
 2. pip install virtualenv
 
 ### Mouse
-[!Logitech Mouse Settings](/images/Logitech.png)
+![Logitech Mouse Settings](/images/Logitech.png)
 
 ## Linux
 *TODO*
