@@ -4,7 +4,7 @@ How to get going in...
 ## Windows
 
 ### System
-1. Make the **capslock** key another **backspace** key with this registry file
+1. Make the **capslock** key another **backspace** key with [this registry file](/caps-to-bs.reg)
 2. Install [Inconsolata](/fonts/Inconsolata-Regular.ttf)
 
 ### Shell
