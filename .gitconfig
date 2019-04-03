@@ -1,0 +1,59 @@
+[user]
+        name = Matt McCartney
+        email = mmccartney@appliedminds.com
+[core]
+        editor = nano
+        safecrlf = false
+[filter "lfs"]
+        clean = git-lfs clean -- %f
+        smudge = git-lfs smudge -- %f
+        process = git-lfs filter-process
+        required = true
+[gui]
+        gcwarning = false
+[advice]
+    statusHints = false
+[alias]
+    # checkout
+    co = checkout
+    # start a new branch
+    n = checkout -b
+    # status
+    s = status
+    # sync with the remote
+    f = fetch --all
+    # edit the git config file in core editor
+    ec = git config --global -e
+    # pretty log
+    l = log --pretty=format:"%C(yellow)%h\\ %ad%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --date=short
+    # list branches by last modified
+    b = "!git for-each-ref --sort='-authordate' --format='%(authordate)%09%(objectname:short)%09%(refname)' refs/heads | sed -e 's-refs/heads/--'"
+    # from https://gggritso.com/human-git-aliases
+    unstage = reset -q HEAD --
+    discard = checkout --
+    nevermind = !git reset --hard HEAD && git clean -d -f
+    uncommit = reset --mixed HEAD~
+    resave = commit --amend
+    fold = commit --amend --no-edit
+    last = log -1 HEAD --format=format:"%Cred%H"
+    copy-last-hash = !git last | pbcopy
+    summary = status -u -s
+    graph = log --graph -10 --branches --remotes --tags  --format=format:'%Cgreen%h %Creset• %<(75,trunc)%s (%cN, %ar) %Cred%d' --date-order
+    history = log -10 --format=format:'%Cgreen%h %Creset%s (%aN, %ar)'
+    rename-branch = branch -m
+    tags = tag
+    stashes = stash list
+    prestage = diff
+    precommit = diff --cached
+    remotes = remote -v
+    unmerged = branch --no-merged
+    unstash = stash pop
+    what = show
+    back = checkout "-"
+    tuck = stash save
+    current-branch = rev-parse --abbrev-ref HEAD
+    untuck = stash pop "stash@{0}"
+    aliases = !git config --get-regexp ^alias\\. | sed -e s/^alias\\.// -e s/\\ /\\:\\ /
+    work-log = !git log --reverse master...HEAD --format=format:'* %B' | pbcopy
+[credential]
+        helper = store

@@ -9,16 +9,23 @@ How to get going in...
 
 ### Shell
 1. Download and install [Git](https://git-scm.com/download/win) for Windows
-2. Run **Git Bash**, open *Options...* and apply the following settings:
+2. Mintty config
+    * `cp ./.minttyrc ~/`
+3. Run **Git Bash**, open *Options...* and apply the following settings (that aren't included in the above rc file):
     * ![Looks](/images/Looks.png) ![Text](/images/Text.png)
     * ![Keys](/images/Keys.png) ![Mouse](/images/Mouse.png)
     * ![Window](/images/Window.png) ![Terminal](/images/Terminal.png)
-3. Bash profile
+    * Colors
+        - Foreground... `rgb(192, 192, 192)`
+        - Background... `rgb(  0,  34,  68)`
+        - Cursor...     `rgb(191, 191, 191)`
+4. Bash profile
     * `touch ~/.bash_profile`
     * `cp ./.bashrc ~/`
     * `source ~/.bashrc`
-4. `gitconf`
-5. ssh
+5. Git config
+    * `cp ./.gitconf ~/`
+6. ssh
     * `ssh-keygen`
     * `cat ~/.ssh/id_rsa.pub`
 
@@ -39,7 +46,7 @@ How to get going in...
 ### Python
 1. [Download and install](https://www.python.org/)
     * Make sure to check the *Add to Path* box
-2. `pip install virtualenv`
+2. `pip install --user pipenv`
 
 ### Mouse
 ![Logitech Mouse Settings](/images/Logitech.png)

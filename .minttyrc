@@ -1,0 +1,13 @@
+BoldAsFont=no
+Transparency=low
+CursorType=underscore
+ClipShortcuts=no
+CtrlShiftShortcuts=yes
+CopyAsRTF=no
+ClicksPlaceCursor=yes
+Columns=177
+Rows=32
+Font=Inconsolata
+FontHeight=18
+ForegroundColour=192,192,192
+BackgroundColour=0,34,68
