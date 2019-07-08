@@ -1,16 +1,18 @@
 [user]
-        name = Matt McCartney
-        email = mmccartney@appliedminds.com
+	name = Matt McCartney
+	email = mmccartney@appliedminds.com
 [core]
-        editor = nano
-        safecrlf = false
+	editor = nano
+	safecrlf = false
+[pull]
+    rebase = true
 [filter "lfs"]
-        clean = git-lfs clean -- %f
-        smudge = git-lfs smudge -- %f
-        process = git-lfs filter-process
-        required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
 [gui]
-        gcwarning = false
+	gcwarning = false
 [advice]
     statusHints = false
 [alias]
@@ -28,8 +30,10 @@
     l = log --pretty=format:"%C(yellow)%h\\ %ad%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --date=short
     # list branches by last modified
     b = "!git for-each-ref --sort='-authordate' --format='%(authordate)%09%(objectname:short)%09%(refname)' refs/heads | sed -e 's-refs/heads/--'"
+    log-msg = log --format=%B | head -n 20
     # from https://gggritso.com/human-git-aliases
     unstage = reset -q HEAD --
+    pruner = git remote prune origin
     discard = checkout --
     nevermind = !git reset --hard HEAD && git clean -d -f
     uncommit = reset --mixed HEAD~
@@ -54,6 +58,5 @@
     current-branch = rev-parse --abbrev-ref HEAD
     untuck = stash pop "stash@{0}"
     aliases = !git config --get-regexp ^alias\\. | sed -e s/^alias\\.// -e s/\\ /\\:\\ /
-    work-log = !git log --reverse master...HEAD --format=format:'* %B' | pbcopy
 [credential]
-        helper = store
+	helper = store

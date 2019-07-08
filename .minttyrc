@@ -11,3 +11,5 @@ Font=Inconsolata
 FontHeight=18
 ForegroundColour=192,192,192
 BackgroundColour=0,34,68
+Locale=C
+Charset=UTF-8

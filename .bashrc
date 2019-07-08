@@ -17,17 +17,17 @@ alias venv27='virtualenv -p ~/AppData/Local/Programs/Python/Python27-64/python.e
 # Git
 alias g='git'
 alias gits='g status'
-alias gitp='git pull'
-alias gitcom='git checkout master'
 alias gitgui='/cmd/git-gui.exe'
 alias gitk='/cmd/gitk.exe'
-alias gitconf='git config --global user.name "Matt McCartney" && \
-               git config --global user.email mmccartney@appliedminds.com && \
-               git config --global gui.gcwarning false'
 alias gpa="ls -R --directory --color=never */.git | sed 's/\/.git//' | xargs -P10 -I{} git -C {} pull"
+## https://stackoverflow.com/a/6127884
+alias del-merged="git branch --merged | egrep -v \"(^\\*|master|dev)\" | xargs git branch -d"
 
 # Python
+alias python='winpty python -u'
+alias pipupdate='python -m pip install --upgrade pip'
 alias pyserve='python -m http.server 8000'
+alias penv='pipenv'
 
 # Docker
 alias dls='docker ps' # List containers
