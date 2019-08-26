@@ -19,6 +19,8 @@ How to get going in...
         - Foreground... `rgb(192, 192, 192)`
         - Background... `rgb(  0,  34,  68)`
         - Cursor...     `rgb(191, 191, 191)`
+3. MINGW64 Config
+    * `mkdir -p ~/.config/ && cp ./.config/git-prompt.sh ~/.config/`
 4. Bash profile
     * `touch ~/.bash_profile`
     * `cp ./.bashrc ~/`

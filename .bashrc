@@ -1,10 +1,14 @@
 PATH=~/AppData/Roaming/npm:$PATH
 
 # Bash
-alias godev='cd ~/dev/'
+alias ls='ls -F --color=always --show-control-chars'
+alias ll='ls -lh --color=always --show-control-chars'
 alias sourceb='source ~/.bashrc'
 alias editbash='atom ~/.bashrc'
 alias catbash='cat ~/.bashrc'
+
+# Bookmarks
+alias godev='cd ~/dev/'
 
 # Virtual env
 alias sv='source ./venv/Scripts/activate'
@@ -22,6 +26,9 @@ alias gitk='/cmd/gitk.exe'
 alias gpa="ls -R --directory --color=never */.git | sed 's/\/.git//' | xargs -P10 -I{} git -C {} pull"
 ## https://stackoverflow.com/a/6127884
 alias del-merged="git branch --merged | egrep -v \"(^\\*|master|dev)\" | xargs git branch -d"
+
+# Android
+alias adb='~/AppData/Local/Android/Sdk/platform-tools/adb.exe'
 
 # Python
 alias python='winpty python -u'
