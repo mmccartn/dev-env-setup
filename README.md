@@ -2,6 +2,9 @@
 How to get going in...
 
 ## Windows
+1. Set title bar color to `#21252b`
+2. Set [AccentColorInactive](https://winaero.com/change-color-of-inactive-title-bars-in-windows-10/) in `HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\DWM` to something darker
+3. [DisallowShaking](https://www.howtogeek.com/howto/windows-7/disable-aero-shake-in-windows-7/) in `HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Advanced`
 
 ### System
 1. Make the **capslock** key another **backspace** key with [this registry file](/caps-to-bs.reg)
@@ -38,8 +41,8 @@ How to get going in...
 3. Configure sync-settings
     * [Generate new token](https://github.com/settings/tokens) for GitHub API access
     * Gist Id: `609090412d183f365d72cde0c5e8b6ed`
-    * Disable *Check For Updated Backup*
 4. Sync settings: [`ctrl+shift+p`, **Sync Settings: Restore**]
+5. If syntax highlighting seems off, disable `Settings -> Core -> Use Tree Sitter Parsers` [see issue](https://github.com/atom/atom/issues/18307#issuecomment-432494998)
 
 ### Gestures
 1. Download and Install [StrokesPlus](http://www.strokesplus.com/downloads/)
