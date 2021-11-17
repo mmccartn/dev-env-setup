@@ -43,6 +43,15 @@ How to get going in...
     * Gist Id: `609090412d183f365d72cde0c5e8b6ed`
 4. Sync settings: [`ctrl+shift+p`, **Sync Settings: Restore**]
 5. If syntax highlighting seems off, disable `Settings -> Core -> Use Tree Sitter Parsers` [see issue](https://github.com/atom/atom/issues/18307#issuecomment-432494998)
+6. Manually apply [atom/language-javascript/pull/Operators](https://github.com/atom/language-javascript/pull/686):
+```bash
+cd ~/dev/personal
+git clone https://github.com/icecream17/language-javascript.git
+cd ./language-javascript
+git checkout operators
+rm ./grammars/tree-sitter*
+npm i # ignore node-gyp errors
+```
 
 ### Gestures
 1. Download and Install [StrokesPlus](http://www.strokesplus.com/downloads/)
